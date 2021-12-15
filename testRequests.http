@@ -1,0 +1,15 @@
+GET http://localhost:8080/getVacancy?id=2
+Accept: application/json
+
+###
+
+POST http://localhost:8080/addVacancy
+Content-Type: application/json
+
+{
+  "vacancy_name": "Another one",
+  "salary_min": 123,
+  "salary_max": 456,
+  "schedule": "full-time",
+  "date_published": 1639587122
+}
