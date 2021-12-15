@@ -1,12 +1,11 @@
-package me.avrong
+package me.avrong.vacancies
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
-import me.avrong.models.Vacancies
-import me.avrong.models.VacancyDAO
-import me.avrong.plugins.*
+import me.avrong.vacancies.models.Vacancies
+import me.avrong.vacancies.models.VacancyDAO
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.StdOutSqlLogger

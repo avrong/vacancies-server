@@ -1,4 +1,4 @@
-package me.avrong.plugins
+package me.avrong.vacancies
 
 import io.ktor.serialization.*
 import io.ktor.features.*
@@ -7,8 +7,8 @@ import io.ktor.http.*
 import io.ktor.request.*
 import io.ktor.response.*
 import io.ktor.routing.*
-import me.avrong.models.VacancyIn
-import me.avrong.models.VacancyDAO
+import me.avrong.vacancies.models.VacancyIn
+import me.avrong.vacancies.models.VacancyDAO
 import org.jetbrains.exposed.sql.transactions.transaction
 
 fun Application.configureJsonApi() {

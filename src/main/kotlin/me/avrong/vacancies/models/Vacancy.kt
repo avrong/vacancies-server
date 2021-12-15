@@ -1,8 +1,8 @@
-package me.avrong.models
+package me.avrong.vacancies.models
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import me.avrong.DateSerializer
+import me.avrong.vacancies.DateSerializer
 import org.jetbrains.exposed.dao.IntEntity
 import org.jetbrains.exposed.dao.IntEntityClass
 import org.jetbrains.exposed.dao.id.EntityID

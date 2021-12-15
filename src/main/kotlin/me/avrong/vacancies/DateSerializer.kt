@@ -1,4 +1,4 @@
-package me.avrong
+package me.avrong.vacancies
 
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind
