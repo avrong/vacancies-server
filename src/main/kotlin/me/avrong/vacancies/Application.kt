@@ -2,6 +2,8 @@ package me.avrong.vacancies
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
+import io.ktor.application.*
+import io.ktor.features.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
 import me.avrong.vacancies.models.Vacancies
@@ -30,6 +32,10 @@ fun main() {
     }
 
     embeddedServer(Netty, port = 8080, host = "127.0.0.1") {
+        install(CORS) {
+            anyHost()
+        }
+
         configureJsonApi()
     }.start(wait = true)
 }
