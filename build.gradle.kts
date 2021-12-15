@@ -12,7 +12,7 @@ plugins {
 group = "me.avrong"
 version = "0.0.1"
 application {
-    mainClass.set("me.avrong.ApplicationKt")
+    mainClass.set("me.avrong.vacancies.ApplicationKt")
 }
 
 repositories {
